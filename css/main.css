@@ -1,0 +1,180 @@
+:root {
+  --main-color: orange;
+  --main-bg-color: #103d4c;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+#home,
+section,
+form {
+  margin-bottom: 150px;
+}
+
+#home > .brand {
+  text-align: left;
+  padding: 20px;
+  color: var(--main-color);
+}
+
+#home > nav {
+  background-color: grey;
+  color: whitesmoke;
+}
+
+#home > nav > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+  margin-left: 20px;
+}
+
+#home > nav > ul > li {
+  margin: 15px 0;
+}
+
+#home > nav > ul > li > a {
+  padding: 15px;
+}
+
+#home > nav > ul > li.active {
+  color: black;
+}
+
+#home > .showcase {
+  background-image: url(../assets/imgs/building.jpg);
+  background-size: cover;
+  /* background-color: rgb(199, 199, 199); */
+  height: 350px;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+#home > .showcase > h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 2.5em;
+  color: whitesmoke;
+  font-weight: lighter;
+}
+
+#home > .showcase > h2 > span {
+  font-size: 20px;
+  color: var(--main-color);
+}
+
+#about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#about > h2 {
+  color: var(--main-color);
+  font-weight: lighter;
+  text-decoration: underline;
+}
+
+#about > p {
+  width: 50%;
+}
+
+#about > .group-cards {
+  padding: 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#about > .group-cards > .card {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+#about > .group-cards > .card > figure {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#about > .group-cards > .card > figure > img {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  margin-bottom: 15px;
+}
+
+#about > .group-counts {
+  background-color: var(--main-bg-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 50px 150px;
+}
+
+#about > .group-counts > .count {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#about > .group-counts > .count > span {
+  font-size: 2em;
+  color: brown;
+}
+
+#about > .group-counts > .count > h4 {
+  color: whitesmoke;
+  font-weight: initial;
+}
+
+#contact {
+  background-color: var(--main-bg-color);
+}
+/*# sourceMappingURL=main.css.map */
