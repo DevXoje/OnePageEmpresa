@@ -1,0 +1,48 @@
+#about {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 0 100px;
+	.imagen {
+		background-color: var(--bg-primary);
+		height: 300px;
+		margin-bottom: 50px;
+	}
+	.skills {
+		padding: 30px;
+		border: 1px solid var(--bg-primary);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		header {
+			text-align: center;
+			margin: 0 auto;
+			h2,
+			p {
+				margin-bottom: 20px;
+			}
+			p {
+				font-size: 0.7em;
+				font-weight: lighter;
+			}
+		}
+		.galery_skills {
+			display: flex;
+			justify-content: space-around;
+			.skill {
+				.logo {
+					aspect-ratio: 1/1;
+					border-radius: 50%;
+					height: 70px;
+					background-color: var(--bg-primary);
+					margin: 0 auto;
+				}
+				figcaption {
+					margin-top: 20px;
+					border: 1px solid black;
+					padding: 5px 10px;
+				}
+			}
+		}
+	}
+}

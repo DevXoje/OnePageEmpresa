@@ -1,0 +1,18 @@
+.group-counts {
+	background-color: var(--bg-secondary);
+	display: flex;
+	justify-content: space-around;
+	padding: 50px 5%;
+	.count {
+		align-content: center;
+		text-align: center;
+		span {
+			font-size: 2em;
+			color: brown;
+		}
+		h4 {
+			color: whitesmoke;
+			font-weight: initial;
+		}
+	}
+}

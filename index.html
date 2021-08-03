@@ -2,29 +2,88 @@
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
 		<title>YOUR COMPANY NAME</title>
-		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 		<!--Fontawesome Icons-->
+		<link rel="stylesheet" href="./fontawesome/css/all.css" />
+		<!--Bootstap -->
+		<link
+			rel="stylesheet"
+			href="./bootstrap-5.0.2-dist/css/bootstrap.min.css"
+		/>
 		<script
-			src="https://kit.fontawesome.com/2c36e9b7b1.js"
-			crossorigin="anonymous"
+			defer
+			src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"
 		></script>
+
+		<!--Custom Styles-->
+		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
 		<header id="home">
 			<div class="brand">YOURCOMPANYNAME</div>
-			<nav>
-				<ul>
-					<li><a class="active" href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#projects">Services</a></li>
-					<li><a href="#group-counts">Testimonials</a></li>
-					<li><a href="#projects">Portfolio</a></li>
-					<li><a href="#contact">Contacts</a></li>
-				</ul>
-			</nav>
+
 			<div class="showcase">
-				<h2>Welcome to <span>YOURCOMPANYNAME</span></h2>
+				<nav class="navbar navbar-expand-lg">
+					<div class="container-fluid">
+						<button
+							class="navbar-toggler"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarSupportedContent"
+							aria-controls="navbarSupportedContent"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<i class="fas fa-bars"></i>
+						</button>
+						<div
+							class="collapse navbar-collapse"
+							id="navbarSupportedContent"
+						>
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+								<li class="nav-item">
+									<a
+										class="nav-link active"
+										aria-current="page"
+										href="#home"
+										>Home</a
+									>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#about">About</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#projects"
+										>Services</a
+									>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#group-counts"
+										>Testimonials</a
+									>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#projects"
+										>Portfolio</a
+									>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#contact"
+										>Contacts</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<div class="title">
+					<h2>Welcome to <span>YOURCOMPANYNAME</span></h2>
+				</div>
 			</div>
 		</header>
 		<section id="team">
@@ -37,60 +96,82 @@
 					nisi nesciunt architecto recusandae odio ullam.
 				</p>
 			</div>
-			<div class="group-cards">
-				<div class="card">
-					<figure>
-						<img src="./assets/imgs/smile-woman.jpg" alt="" />
-						<figcaption>Hugo Silva</figcaption>
-					</figure>
-					<p>
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit. Veritatis beatae harum rerum obcaecati
-					</p>
-				</div>
-				<div class="card">
-					<figure>
-						<img src="./assets/imgs/smile-man.jpg" alt="" />
-						<figcaption>Imanol Arias</figcaption>
-					</figure>
-					<p>
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit. Veritatis beatae harum rerum obcaecati
-					</p>
-				</div>
-				<div class="card">
-					<figure>
-						<img src="./assets/imgs/officer.jpg" alt="" />
 
-						<figcaption>Javier Bardem</figcaption>
-					</figure>
-					<p>
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit. Veritatis beatae harum rerum obcaecati
-					</p>
+			<div class="card-group row row-cols-1 row-cols-sm-2 row-cols-md-3">
+				<div class="col mb-4">
+					<div class="card">
+						<img
+							src="./assets/imgs/smile-woman.jpg"
+							class="card-img-top"
+							alt="..."
+						/>
+						<div class="card-body">
+							<h5 class="card-title">Hugo Silva</h5>
+							<p class="card-text">
+								Lorem, ipsum dolor sit amet consectetur
+								adipisicing elit. Veritatis beatae harum rerum
+								obcaecati
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col mb-4">
+					<div class="card">
+						<img
+							src="./assets/imgs/smile-man.jpg"
+							class="card-img-top"
+							alt="..."
+						/>
+						<div class="card-body">
+							<h5 class="card-title">Imanol Arias</h5>
+							<p class="card-text">
+								Lorem, ipsum dolor sit amet consectetur
+								adipisicing elit. Veritatis beatae harum rerum
+								obcaecati
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col mb-4">
+					<div class="card">
+						<img
+							src="./assets/imgs/officer.jpg"
+							class="card-img-top"
+							alt="..."
+						/>
+						<div class="card-body">
+							<h5 class="card-title">Javier Bardem</h5>
+							<p class="card-text">
+								Lorem, ipsum dolor sit amet consectetur
+								adipisicing elit. Veritatis beatae harum rerum
+								obcaecati
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 		<section class="group-counts" id="group-counts">
 			<div class="count">
-				<span>2500</span>
+				<span>1</span>
 				<h4>Happy clients</h4>
 			</div>
 			<div class="count">
-				<span>300</span>
+				<span>1</span>
 				<h4>Full notebooks</h4>
 			</div>
 			<div class="count">
-				<span>120</span>
+				<span>1</span>
 				<h4>Teammates</h4>
 			</div>
 			<div class="count">
-				<span>30</span>
+				<span>1</span>
 				<h4>Stores</h4>
 			</div>
 		</section>
-		<section>img</section>
-		<form action="#" method="post" id="contact">
+		<!-- 	<section>img</section> -->
+
+		<form action="#" method="post" id="contact" class="row">
 			<header>
 				<h3>Contact us</h3>
 				<p>
@@ -99,55 +180,56 @@
 					adipisicing elit. Blanditiis
 				</p>
 			</header>
-
-			<div class="inputs">
-				<div class="wrapper-user_name grid_item">
-					<input
-						type="text"
-						placeholder="Name"
-						name="user_name"
-						id="user_name"
-					/>
-				</div>
-				<div class="wrapper-category grid_item">
-					<select name="category" name="category" id="category">
-						<option value="success">Success</option>
-						<option value="warning">Warning</option>
-						<option value="danger">Danger</option>
-					</select>
-				</div>
-				<div class="wrapper-phone grid_item">
-					<input
-						type="text"
-						placeholder="Phone"
-						name="user_phone"
-						id="user_phone"
-					/>
-				</div>
-				<div class="wrapper-city grid_item">
-					<select name="city" name="city" id="city">
-						<option value="calp">Calp</option>
-						<option value="benidorm">Benidorm</option>
-						<option value="burgos">Burgos</option>
-					</select>
-				</div>
-				<div class="wrapper-user_mail grid_item">
-					<input type="email" placeholder="E-mail" id="user_mail" />
-				</div>
-				<div class="wrapper-descripton grid_item">
-					<textarea
-						name="description"
-						id="description"
-						cols="30"
-						rows="6"
-						placeholder="Message"
-					></textarea>
-				</div>
+			<div class="wrapper-user_name form_item col-md-6">
+				<input
+					type="text"
+					placeholder="Name"
+					name="user_name"
+					id="user_name"
+				/>
 			</div>
-			<button type="submit" class="btn_submit">Contact us</button>
+			<div class="wrapper-category form_item col-md-6">
+				<select name="category" name="category" id="category">
+					<option disabled selected>Category</option>
+					<option value="success">Success</option>
+					<option value="warning">Warning</option>
+					<option value="danger">Danger</option>
+				</select>
+			</div>
+			<div class="wrapper-phone form_item col-md-6">
+				<input
+					type="text"
+					placeholder="Phone"
+					name="user_phone"
+					id="user_phone"
+				/>
+			</div>
+			<div class="wrapper-city form_item col-md-6">
+				<select name="city" name="city" id="city">
+					<option disabled selected>City</option>
+					<option value="calp">Calp</option>
+					<option value="benidorm">Benidorm</option>
+					<option value="burgos">Burgos</option>
+				</select>
+			</div>
+			<div class="wrapper-user_mail form_item">
+				<input type="email" placeholder="E-mail" id="user_mail" />
+			</div>
+			<div class="wrapper-descripton form_item">
+				<textarea
+					name="description"
+					id="description"
+					cols="30"
+					rows="6"
+					placeholder="Message"
+				></textarea>
+			</div>
+			<div class="wrapper-btn_submit">
+				<button type="submit" class="btn_submit">Contact us</button>
+			</div>
 		</form>
 		<section id="about">
-			<div class="imagen"></div>
+			<div class="img-fluid imagen"></div>
 			<div class="skills">
 				<header>
 					<h2>About us</h2>
@@ -180,6 +262,8 @@
 				</div>
 			</div>
 		</section>
+		<!-- 	<section>img</section> -->
+
 		<section id="projects">
 			<header>
 				<h2>Our gallery</h2>
@@ -192,48 +276,48 @@
 				</p>
 			</header>
 			<div class="galery_projects">
-				<div class="project"></div>
-				<div class="project"></div>
-				<div class="project"></div>
-				<div class="project"></div>
-				<div class="project"></div>
+				<div class="project">1</div>
+				<div class="project">2</div>
+				<div class="project">3</div>
+				<div class="project">4</div>
+				<div class="project">5</div>
 			</div>
 			<div class="galery_controls">
 				<i class="fas fa-chevron-left"></i
 				><i class="fas fa-chevron-right"></i>
 			</div>
 		</section>
-		<footer>
-			<div class="sitemap">
-				<div class="footer_list">
+		<footer id="main_footer">
+			<div class="sitemap row">
+				<div class="footer_list col">
 					<h3>Content</h3>
 					<ul>
 						<li><a href="#">Lorem ipsum</a></li>
 						<li><a href="#">Dolor sit</a></li>
 					</ul>
 				</div>
-				<div class="footer_list">
+				<div class="footer_list col">
 					<h3>Information</h3>
 					<ul>
 						<li><a href="#">Lorem ipsum</a></li>
 						<li><a href="#">Dolor sit</a></li>
 					</ul>
 				</div>
-				<div class="footer_list">
+				<div class="footer_list col">
 					<h3>Legal</h3>
 					<ul>
 						<li><a href="#">Lorem ipsum</a></li>
 						<li><a href="#">Dolor sit</a></li>
 					</ul>
 				</div>
-				<div class="footer_list">
+				<div class="footer_list col">
 					<h3>Help</h3>
 					<ul>
 						<li><a href="#">Lorem ipsum</a></li>
 						<li><a href="#">Dolor sit</a></li>
 					</ul>
 				</div>
-				<div class="footer_list">
+				<div class="footer_list col contact">
 					<ul>
 						<li>
 							<a href="tel:#"
@@ -252,8 +336,8 @@
 					</ul>
 				</div>
 			</div>
-			<div class="copyright">
-				<p>
+			<div class="last_footer">
+				<p class="copyright">
 					Copyright <i class="far fa-copyright"></i> 2019. Your
 					companyname All rights reserved
 				</p>
@@ -265,5 +349,7 @@
 				</div>
 			</div>
 		</footer>
+		<!--Custom Script-->
+		<script defer type="module" src="./js/main.js"></script>
 	</body>
 </html>
